@@ -33,6 +33,7 @@
     font-size: 3rem;
     color: @white;
     font-family: 'moneta';
+
 }
 
 .header-text-container h3 {
@@ -44,13 +45,68 @@
 // .graphs-section {
 //  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
 // }
+.graphs-section {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width:100%;
+
+
+}
+
+
+.grants-office{
+    padding-left: 60px;
+    width:370px;
+    height:165px;
+
+}
+
+.grants-nationality{
+    width:200px;
+    height:180px;
+
+}
+
+.grants-time{
+    width:270px;
+    height:200px;
+    margin-right:60px;
+}
+
+.grant-titles{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    padding-bottom: 60px;
+    font-size: 20px;
+    font-family: 'acumin';
+}
+
+.search-by-office {
+
+padding-left:20px;
+
+}
+
+.search-by-nation{
+padding-left:40px;
+}
+
+
 
 .view-more-data-btn-container {
+
     height: 44px;
-    width: 180px;
+    width: 350px;
+    padding-left: 40px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10%;
+}
+
+#download-btn{
+    margin-left: 25px;
 }
 
 .middle-section {
@@ -74,11 +130,124 @@
     font-family: 'acumin';
     font-size: 1.4rem;
 }
+//start here for bottom section
+.bottom-header2{
+ display: flex;
+ justify-content: center;
+ padding-top: 200px;
+ font-size: 2.5rem;
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
 
+}
+ .bottom-section {
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+    height:500px;
+  //  border: 5px solid green;
+    padding-top:100px;
+    padding-bottom: 20px;
+ }
+
+ .first-data-container{
+    width:33%;
+    box-sizing: border-box;
+   // border: 2px solid red;
+ }
+ .first-data-container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: acumin;
+ }
+
+ .first-data-container h3{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    padding-left:50px;
+    padding-right:50px;
+    font-size: 1.3rem;
+    font-family: acumin;
+ }
+
+ .second-data-container{
+    width:33%;
+    box-sizing: border-box;
+    //border: 2px solid red;
+ }
+
+ .second-data-container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: acumin;
+ }
+
+ .second-data-container h3{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-left:180px;
+    padding-right:150px;
+    font-size: 1.3rem;
+    font-family: acumin;
+ }
+
+ .third-data-container{
+    width:33%;
+    box-sizing: border-box;
+   // border: 2px solid red;
+ }
+
+ .third-data-container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: acumin;
+ }
+
+ .third-data-container h3{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-left:150px;
+    padding-right:130px;
+    font-size: 1.3rem;
+    font-family: acumin;
+ }
+ .read-more-btn-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+ }
+
+ .button-link{
+    //display: inline-block;
+    width:7%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #404C4A;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+
+
+ }
+ .button-link:hover {
+    background-color: #404C4A;
+    color: #ffffff;
+    transform: scale(1.015);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 .back-to-top {
     width: 8%;
     font-size: 1.2rem;
@@ -115,9 +284,9 @@
     .hrf-logo-img-container img {
         height: 30px;
         width: 48px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 1.5rem;
         padding-top: 5%;
@@ -170,7 +339,7 @@
         width: 85%;
         text-align: center;
         margin: 0 auto;
-       
+
     }
 
     .middle-section-text-container h3 {
@@ -227,9 +396,9 @@
     .hrf-logo-img-container img {
         height: 30px;
         width: 48px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 1.5rem;
         padding-top: 5%;
@@ -271,7 +440,7 @@
         background-color: @secondary-color;
         padding-top: 5%;
         text-align: center;
-        
+
     }
 
     .hrf-img {
@@ -343,7 +512,7 @@
         height: 30px;
         width: 48px;
     }
-   
+
     .header-text-container h1 {
         font-size: 1.5rem;
         padding-top: 5%;
@@ -436,7 +605,7 @@
         display: flex;
         flex-wrap: wrap;
     }
-    
+
 }
 
 @media @tablet-small {
@@ -456,9 +625,9 @@
     .hrf-logo-img-container img {
         height: 66px;
         width: 108px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 2.5rem;
         padding-top: 5%;
@@ -564,15 +733,15 @@
        position: absolute;
        top: 0;
        left: 0;
-       
+
     }
 
     .hrf-logo-img-container img {
         height: 83px;
         width: 136px;
-       
+
     }
-   
+
     .header-text-container h1 {
         font-size: 3.5rem;
         padding-top: 5%;
@@ -751,7 +920,7 @@
         padding: 0 2%;
     }
 
-   
+
  .first-data-point-container {
         width: 23%;
     }
@@ -763,7 +932,7 @@
     .third-data-point-container {
         width: 23%;
     }
-    
+
     .back-to-top {
         width: 35%;
     }
