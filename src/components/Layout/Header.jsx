@@ -5,7 +5,7 @@ import Logo from '../../styles/Images/WhiteLogo.png';
 import { colors } from '../../styles/data_vis_colors';
 import LoginButton from '../common/LoginButton';
 import LogoutButton from '../common/LogoutButton';
-//import ProfilePage from '../common/Profile';
+
 import { useAuth0 } from '@auth0/auth0-react';
 
 const { primary_accent_color } = colors;
@@ -39,7 +39,7 @@ function HeaderContent() {
           <Link
             to="/profile"
             style={{
-              color: '#E2FOF7',
+              color: '#E2F0F7',
               paddingLeft: '50px',
               paddingRight: '50px',
             }}

@@ -63,14 +63,18 @@ export function App() {
       >
         <HeaderContent />
       </Header>
-
-      <Switch>
-        <Route path="/" exact component={LandingPage} />
-        <Route path="/graphs" component={GraphsContainer} />
-        <Route path="/profile" component={ProfilePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-
+      {error && <p>Authentication Error</p>}
+      {!error && isLoading && <p>Loading...</p>}
+      {!error && !isLoading && (
+        <>
+          <Switch>
+            <Route path="/" exact component={LandingPage} />
+            <Route path="/graphs" component={GraphsContainer} />
+            <Route path="/profile" component={ProfilePage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </>
+      )}
       <Footer
         style={{
           backgroundColor: primary_accent_color,

@@ -8,7 +8,7 @@ const LogoutButton = () => {
     isAuthenticated && (
       <Link
         style={{
-          color: '#E2FOF7',
+          color: '#E2F0F7',
           padding: 0,
           paddingRight: '75px',
         }}
